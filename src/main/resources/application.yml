@@ -3,3 +3,12 @@ server:
 spring:
   application:
     name: springboot-demo
+  freemarker:
+    allow-request-override: false #允许请求重写
+    cache: true
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+#    prefix:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/ #模板加载地址,resources中的templates文件夹
