@@ -1,0 +1,9 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: springboot-jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
