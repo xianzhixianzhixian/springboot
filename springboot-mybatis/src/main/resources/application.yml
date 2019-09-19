@@ -11,3 +11,12 @@ spring:
 mybatis:
   type-alias-package: com.springboot.mapper
   mapper-locations: classpath*:com/springboot/mapper/**/*.xml
+logging:
+  level:
+    com.springboot.mapper: DEBUG #作为package(包)的前缀来设置日志级别
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+  page-size-zero: true
