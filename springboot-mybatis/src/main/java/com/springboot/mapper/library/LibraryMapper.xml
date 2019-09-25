@@ -1,0 +1,19 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.mapper.library.LibraryMapper">
+    <resultMap id="CourseMap" type="com.springboot.bean.Course">
+        <id property="cno" column="cno" />
+        <result property="username" column="username" />
+        <result property="cname" column="cname"/>
+        <result property="credit" column="credit"/>
+        <result property="cterm" column="cterm"/>
+        <result property="ctea" column="ctea"/>
+    </resultMap>
+
+    <select id="selectByCno" parameterType="java.lang.Long" resultMap="CourseMap">
+        SELECT * FROM  course WHERE cno = #{cno}
+    </select>
+
+    <insert id="insertCourse" parameterType="com.springboot.bean.Course">
+        insert into course(cname, credit, cterm, ctea) values (#{cname}, #{credit}, #{cterm}, #{ctea})
+    </insert>
+</mapper>

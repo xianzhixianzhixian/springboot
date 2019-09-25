@@ -4,19 +4,31 @@ spring:
   application:
     name: springboot-mybatis
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/school?useSSL=false&characterEncoding=utf8
-    username: root
-    password: 123456
-mybatis:
-  type-alias-package: com.springboot.mapper
-  mapper-locations: classpath*:com/springboot/mapper/**/*.xml
-logging:
-  level:
-    com.springboot.mapper: DEBUG #作为package(包)的前缀来设置日志级别
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql
-  page-size-zero: true
+    course:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/school?characterEncoding=utf-8&useUnicode=true
+    library:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf-8&useUnicode=true
+
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/school?useSSL=false&characterEncoding=utf8
+#    username: root
+#    password: 123456
+#mybatis:
+#  type-alias-package: com.springboot.mapper
+#  mapper-locations: classpath*:com/springboot/mapper/**/*.xml #classpath默认根目录是target/classes,classpath*不仅会在target/classes中找资源,还会在打出来的jar包中找资源
+#pagehelper:
+#  helper-dialect: mysql
+#  reasonable: true
+#  support-methods-arguments: true
+#  params: count=countSql
+#  page-size-zero: true
+#logging:
+#  level:
+#    com.springboot.mapper: DEBUG #作为package(包)的前缀来设置日志级别
