@@ -15,6 +15,16 @@ spring:
       password: 123456
       jdbc-url: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf-8&useUnicode=true
 
+mysql:
+  datasource:
+    mixPoolSize: 3
+    maxPoolSize: 25
+    maxLifeTime: 20000
+    borrowConnectionTimeout: 30
+    loginTimeout: 30
+    maintenanceInterval: 60
+    maxIdleTime: 60
+
 #  datasource:
 #    driver-class-name: com.mysql.jdbc.Driver
 #    url: jdbc:mysql://127.0.0.1:3306/school?useSSL=false&characterEncoding=utf8
