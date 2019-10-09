@@ -1,0 +1,18 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: springboot-datasource-autoselect
+  #course-010,library-028
+  datasource:
+    course:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      url: jdbc:mysql://127.0.0.1:3306/school?characterEncoding=utf-8&useUnicode=true
+    library:
+      driver-class-name: com.mysql.jdbc.Driver
+      username: root
+      password: 123456
+      url: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf-8&useUnicode=true
