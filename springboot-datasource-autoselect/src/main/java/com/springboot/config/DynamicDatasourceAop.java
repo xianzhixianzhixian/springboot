@@ -30,6 +30,7 @@ public class DynamicDatasourceAop {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         String area = (String) request.getHeader("area");
         if (AreaKeyId.BEIJING.getArea().equals(area)) {
+            //这里回去路由里取到key对应的数据源
             DynamicDatasourceContextHolder.set(AreaKeyId.BEIJING);
         } else if (AreaKeyId.CHENGDU.getArea().equals(area)) {
             DynamicDatasourceContextHolder.set(AreaKeyId.CHENGDU);

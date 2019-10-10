@@ -41,8 +41,8 @@ public class DynamicDatasourceConfig {
     public DataSource dynamicDatasource() {
         DynamicRoutingDatasource routingDatasource = new DynamicRoutingDatasource();
         Map<Object, Object> datasourceMap = new HashMap<>(2);
-        //设置默认数据源
-        routingDatasource.setDefaultTargetDataSource(courseDatasource());
+        //设置默认数据源,注释掉
+//        routingDatasource.setDefaultTargetDataSource(courseDatasource());
 
         //配置数据源
         datasourceMap.put(AreaKeyId.BEIJING, courseDatasource());
@@ -55,9 +55,9 @@ public class DynamicDatasourceConfig {
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dynamicDatasource());
-        //解决找不到mapper.xml问题
+        //解决找不到mapper.xml问题,请注释掉
 //        sqlSessionFactoryBean.setMapperLocations(
-//                new PathMatchingResourcePatternResolver().getResource("classpath*:mapping/**/*.xml"));
+//                new PathMatchingResourcePatternResolver().getResource("classpath:mapping/**/*.xml"));
         return sqlSessionFactoryBean.getObject();
     }
 
