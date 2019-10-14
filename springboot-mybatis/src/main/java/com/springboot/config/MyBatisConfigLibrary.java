@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  *
  */
 @Configuration
-@MapperScan(basePackages = "com.springboot.mapper.library", sqlSessionFactoryRef = "librarySqlSessionTemplate")
+@MapperScan(basePackages = "com.springboot.mapper.library", sqlSessionFactoryRef = "librarySqlSessionFactory")
 public class MyBatisConfigLibrary {
 
     @Bean(name = "libraryDataSource")

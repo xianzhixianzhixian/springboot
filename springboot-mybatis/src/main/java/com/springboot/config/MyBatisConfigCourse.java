@@ -17,7 +17,7 @@ import javax.sql.DataSource;
  *
  */
 @Configuration
-@MapperScan(basePackages = "com.springboot.mapper.course", sqlSessionFactoryRef = "courseSqlSessionTemplate")
+@MapperScan(basePackages = "com.springboot.mapper.course", sqlSessionFactoryRef = "courseSqlSessionFactory")
 public class MyBatisConfigCourse {
 
     @Primary

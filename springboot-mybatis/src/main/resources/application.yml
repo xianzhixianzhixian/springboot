@@ -8,12 +8,12 @@ spring:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: 123456
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/school?characterEncoding=utf-8&useUnicode=true
+      url: jdbc:mysql://127.0.0.1:3306/school?characterEncoding=utf-8&useUnicode=true
     library:
       driver-class-name: com.mysql.jdbc.Driver
       username: root
       password: 123456
-      jdbc-url: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf-8&useUnicode=true
+      url: jdbc:mysql://127.0.0.1:3306/library?characterEncoding=utf-8&useUnicode=true
 
 mysql:
   datasource:

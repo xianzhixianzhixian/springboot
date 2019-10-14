@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ehcache xmls="http://www.w3.org/2001/XMLSchema-instance"
+         xsi.noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false">
+    <diskStore path="java.io.tmpdir/Tmp_EhCache" />
+    <!-- 默认配置 timeToIdleSeconds空闲失效时间，timeToLiveSeconds存活时间，LRU最长时间未使用算法 -->
+    <defaultCache maxElementsInMemory="5000" eternal="false" timeToIdleSeconds="120"
+                  timeToLiveSeconds="120" memoryStoreEvictionPolicy="LRU" overflowToDisk="false" />
+
+    <cache name="baseCache" maxElementsInMemory="10000" maxElementsOnDisk="10000" />
+</ehcache>

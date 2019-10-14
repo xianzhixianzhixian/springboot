@@ -41,4 +41,9 @@ public class DatasourceController {
     public Integer multiDataSource(@RequestBody Course course) {
         return courseService.addCourse(course);
     }
+
+    @GetMapping("/getCache")
+    public List getCache(Long cno) {
+        return courseMapper.selectByCno(cno);
+    }
 }
