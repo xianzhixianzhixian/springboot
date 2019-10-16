@@ -2,17 +2,17 @@ package com.springboot.bean;
 
 public class Course {
 
-    private String cno;
+    private Long cno;
     private String cname;
     private String credit;
     private String cterm;
     private String ctea;
 
-    public String getCno() {
+    public Long getCno() {
         return cno;
     }
 
-    public void setCno(String cno) {
+    public void setCno(Long cno) {
         this.cno = cno;
     }
 

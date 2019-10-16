@@ -15,4 +15,6 @@ public interface CourseMapper {
     List<Course> selectByCno(Long cno);
 
     Integer insertCourse(Course course);
+
+    Integer updateByPrimaryKey(Course course);
 }

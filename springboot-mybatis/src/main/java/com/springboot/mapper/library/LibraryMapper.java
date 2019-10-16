@@ -15,4 +15,6 @@ public interface LibraryMapper {
     List<Course> selectByCno(Long cno);
 
     Integer insertCourse(Course course);
+
+    Integer updateByPrimaryKey(Course course);
 }

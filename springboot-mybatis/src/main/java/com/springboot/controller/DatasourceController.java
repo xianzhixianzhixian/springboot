@@ -42,8 +42,18 @@ public class DatasourceController {
         return courseService.addCourse(course);
     }
 
+    /**
+     * 根据课程号获取课程数据
+     * @param cno
+     * @return
+     */
     @GetMapping("/getCache")
     public List getCache(Long cno) {
         return courseMapper.selectByCno(cno);
+    }
+
+    @PostMapping("/updateByPrimaryKey")
+    public Integer updateByPrimaryKey(@RequestBody Course course) {
+        return courseMapper.updateByPrimaryKey(course);
     }
 }

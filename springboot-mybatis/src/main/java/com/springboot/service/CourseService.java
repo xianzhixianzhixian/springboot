@@ -18,4 +18,11 @@ public interface CourseService {
      * @return
      */
     Integer addDividedCourse(Course course);
+
+    /**
+     * 根据主键更新数据
+     * @param course
+     * @return
+     */
+    Integer updateByPrimaryKey(Course course);
 }
