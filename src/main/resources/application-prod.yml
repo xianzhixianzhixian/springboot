@@ -1,5 +1,8 @@
 server:
   port: 8080
+  #Spring2.0默认访问路径
+  servlet:
+    context-path: /springboot-prod
 #配置所生效的环境
 env: prod
 spring:
@@ -24,4 +27,4 @@ spring:
     livereload:
       enabled: true
 
-name: restart
+name: restart-prod

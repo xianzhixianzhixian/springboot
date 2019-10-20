@@ -1,5 +1,8 @@
 server:
   port: 8080
+  #Spring2.0默认访问路径
+  servlet:
+    context-path: /springboot-dev
 #配置所生效的环境
 env: dev
 spring:
@@ -23,3 +26,4 @@ spring:
   devtools:
     livereload:
       enabled: true
+name: restart-dev
