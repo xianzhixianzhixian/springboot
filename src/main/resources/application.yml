@@ -17,3 +17,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/school?useSSL=false&characterEncoding=utf8
     username: root
     password: 123456
+  #热部署插件开启
+  devtools:
+    livereload:
+      enabled: true
+
+name: restart
