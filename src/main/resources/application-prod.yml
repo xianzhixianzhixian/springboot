@@ -1,0 +1,27 @@
+server:
+  port: 8080
+#配置所生效的环境
+env: prod
+spring:
+  application:
+    name: springboot-demo
+  freemarker:
+    allow-request-override: false #允许请求重写
+    cache: true
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+#    prefix:
+    suffix: .ftl
+    template-loader-path: classpath:/templates/ #模板加载地址,resources中的templates文件夹
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/school?useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+  #热部署插件开启
+  devtools:
+    livereload:
+      enabled: true
+
+name: restart
