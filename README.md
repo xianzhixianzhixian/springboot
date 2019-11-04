@@ -9,7 +9,4 @@ https://blog.csdn.net/moshowgame/article/details/81129860
 3、IDEA多环境启动解决方案可以参考这篇博客（谢谢博主）<br/>
 https://blog.csdn.net/liu911025/article/details/81489454
 
-### 学习SpringBoot2.0基础用法已经告一段落，接下来是
-https://www.bilibili.com/video/av55643074
-
 ###### 学习还是让我进步很多的，继续加油吧
